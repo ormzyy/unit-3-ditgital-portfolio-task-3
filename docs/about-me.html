@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Me - Muhanad Hussein's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .menu-bar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        .menu-bar li a {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .menu-bar li a:hover {
+            background-color: #e0e0e0;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            top: 100%; /* Position below the button */
+            left: 0;
+            margin-top: 0.5rem; /* Space between button and dropdown */
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown button {
+            background-color: #4CAF50; /* Example button color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown button:hover {
+            background-color: #45a049;
+        }
+        /* Specific styling for the active Technical Skills link */
+        .dropdown-content a.active {
+            background-color: #007bff; /* Example active color */
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <div class="container bg-white shadow-lg rounded-lg p-6 my-8 flex-grow">
+        <!-- Header Section -->
+        <header class="flex flex-col md:flex-row items-center justify-between pb-4 border-b-2 border-gray-200">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div class="logo">
+                    <!-- Placeholder for your logo -->
+                    <img src="https://placehold.co/100x100/000000/FFFFFF?text=WLC" alt="West London College Logo" class="rounded-full w-24 h-24">
+                </div>
+                <nav class="menu-bar">
+                    <ul class="flex space-x-4">
+                        <li><a href="assignmentportfolio.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                        <li><a href="project-gallery-overview.html" class="text-gray-700 hover:text-blue-600">Projects</a></li>                       
+                        <li><a href="contact-me.html" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- About Me Dropdown -->
+            <div class="dropdown">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md transition duration-300">Menu
+                </button>
+                <div class="dropdown-content">
+                    <a href="assignmentportfolio.html" class="hover:bg-gray-100">Home</a>
+                    <a href="about-me.html" class="active hover:bg-gray-100">About Me</a>
+                    <a href="technical-skills.html" class="active hover:bg-gray-100">Technical Skills</a>
+                    <a href="project-gallery-overview.html" class="hover:bg-gray-100">Project Gallery Overview</a>
+                    <a href="unit-9-spreadsheets.html" class="hover:bg-gray-100">Unit 9 Spreadsheets</a>            
+                    <a href="unit-10-database.html" class="hover:bg-gray-100">Unit 10 Database</a>
+                    <a href="unit-12-software-development.html" class="hover:bg-gray-100">Unit 12 Software Development</a>
+                    <a href="unit-1-online-world.html" class="hover:bg-gray-100">Unit 1 Online World</a>
+                    <a href="unit-2-technology-systems.html" class="hover:bg-gray-100">Unit 2 Technology Systems</a>
+                    <a href="unit-3-digital-portfolio.html" class="hover:bg-gray-100">Unit 3 Digital Portfolio</a>
+                    <a href="contact-me.html" class="hover:bg-gray-100">Contact Me</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Technical Skills Section -->
+        <section class="technical-skills-section py-8 px-4">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">About me </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- About me -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">About me</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li> Hi, I'm Muhanad Hussein, a 19-year-old student currently studying at West London College,
+                        Hammersmith Campus. I was born and raised in West London, and ever since I can remember,
+                        I’ve had a strong interest in technology. I'm passionate about pursuing a career in the IT field
+                        and am focused on building the skills and experience I need to succeed in the industry.</li>
+                    </ul>
+                </div>
+
+                
+                <!-- Brief overview of my career aims and what drives me -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">My Career Aims & Drive</h3>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        As a 19-year-old student at West London College, my primary aim is to establish a successful career in the IT field.
+                        My lifelong fascination with technology, cultivated growing up in West London, fuels this ambition.
+                        I am driven by a deep passion for understanding and building technological solutions,
+                        and I am dedicated to continuously enhancing my skills and gaining practical experience to
+                        thrive in this dynamic industry. My goal is to contribute to innovative projects and
+                        solve real-world challenges through technology.
+                    </ul>
+                </div>
+
+                <!-- Education and BTEC Highlights -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Education & BTEC Highlights</h3>
+                    <p class="text-lg leading-relaxed text-gray-700 mb-2">
+                        During the academic year <strong>2024-2025</strong>, my BTEC studies at West London College
+                        focused on essential IT disciplines.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Developed proficiency in <strong>Spreadsheets</strong> for data management and analysis.</li>
+                        <li>Gained foundational knowledge and practical skills in <strong>Database</strong> design and implementation.</li>
+                        <li>Explored various aspects of <strong>Software</strong> development and principles.</li>
+                        <li>Created a comprehensive <strong>Digital Portfolio</strong> showcasing acquired skills and projects.</li>
+                    </ul>
+                </div>
+
+                <!-- Key skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Key Skills</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Critical Thinking & Problem Solving</li>
+                        <li>Productive</li>
+                        <li>Practical Understanding of IT Concepts</li>
+                        <li>Research & Analysis</li>
+                        <li>Teamwork & Collaboration</li>
+                        <li>Presentation Skills</li>
+                    </ul>
+                </div>
+
+               
+                 <!-- Contact Information (now in the grid, replacing Software & Design) -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-700">Contact Information</h3>
+                    <ul class="list-none space-y-2 text-gray-600 pl-0">
+                        <li><strong>Phone:</strong> 07799 467818</li>
+                        <li><strong>College Email:</strong> 11191188@college.wlc.ac.uk</li>
+                        <li><strong>Personal Email:</strong> muhanadhussein2005@gmail.com</li>
+                    </ul>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="contact-info-social-media-links border-t-2 border-gray-200 pt-6 mt-8 text-center text-gray-600">
+            <h3 class="text-lg font-semibold mb-2">Contact Information:</h3>
+            <p>Phone: 07799 467018</p>
+            <p>College Email: 11191188@college.wlc.ac.uk</p>
+            <p>Personal Email: muhanadhussein2005@gmail.com</p>
+            <!-- Add social media links here if you have them -->
+            <div class="flex justify-center space-x-4 mt-4">
+                
+                
+            
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

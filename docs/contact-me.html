@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Muhanad Hussein's Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Using Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .menu-bar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        .menu-bar li a {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .menu-bar li a:hover {
+            background-color: #e0e0e0;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            top: 100%; /* Position below the button */
+            left: 0;
+            margin-top: 0.5rem; /* Space between button and dropdown */
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown button {
+            background-color: #4CAF50; /* Example button color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown button:hover {
+            background-color: #45a049;
+        }
+        /* Specific styling for the active Contact link */
+        .menu-bar li a.active {
+            background-color: #007bff; /* Example active color */
+            color: white;
+            font-weight: 600;
+        }
+        /* Contact item card styling */
+        .contact-item-card {
+            background-color: #f0f0f0;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            text-align: center;
+            color: #555;
+            font-weight: 500;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <div class="container bg-white shadow-lg rounded-lg p-6 my-8 flex-grow">
+        <!-- Header Section (Consistent with other pages) -->
+        <header class="flex flex-col md:flex-row items-center justify-between pb-4 border-b-2 border-gray-200">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <div class="logo">
+                    <!-- Your WLC logo -->
+                    <img src="wlclogo.plg.webp" alt="West London College Logo" class="rounded-full w-24 h-24">
+                </div>
+                <nav class="menu-bar">
+                    <ul class="flex space-x-4">
+                        <li><a href="assignmentportfolio.html" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                        <li><a href="project-gallery.html" class="text-gray-700 hover:text-blue-600">Projects</a></li>
+                        <li><a href="contact-page.html" class="text-gray-700 hover:text-blue-600 active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- About Me Dropdown (Consistent with other pages) -->
+            <div class="dropdown">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    Menu
+                </button>
+                <div class="dropdown-content">
+                    <a href="assignmentportfolio.html" class="hover:bg-gray-100">Home</a>
+                    <a href="about-me.html" class="hover:bg-gray-100">About Me</a>
+                    <a href="technical-skills.html" class="hover:bg-gray-100">Technical Skills</a>
+                    <a href="project-gallery.html" class="hover:bg-gray-100">Project Gallery Overview</a>
+                    <a href="unit-9-spreadsheets.html" class="hover:bg-gray-100">Unit 9 Spreadsheets</a>
+                    <a href="unit-10-database.html" class="hover:bg-gray-100">Unit 10 Database</a>
+                    <a href="unit-12-software-development.html" class="hover:bg-gray-100">Unit 12 Software Development</a>
+                    <a href="unit-1-online-world.html" class="hover:bg-gray-100">Unit 1 Online World</a> 
+                    <a href="unit-2-technology-systems.html" class="hover:bg-gray-100">Unit 2 Technology Systems</a>
+                    <a href="unit-3-digital-portfolio.html" class="hover:bg-gray-100">Unit 3 Digital Portfolio</a>         
+                    <a href="contact-page.html" class="active hover:bg-gray-100">Contact Me</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content - Contact Page -->
+        <section class="contact-section py-8 px-4">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Get in Touch</h2>
+
+            <p class="text-center text-lg text-gray-700 mb-12">
+                This is my Contact page, with a secure form, multiple contact options, availability details and a downloadable CV.
+            </p>
+
+            <!-- Secure Contact Form Link -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-8 text-center">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-700">Secure Contact Form</h3>
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    For detailed inquiries or collaborations, please use my secure online contact form.
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeijGToBEn8gfK64_jI8XA8i2oa7cMOAICF5tmJrVv2z2cDHw/viewform?usp=header" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    Go to Secure Contact Form
+                </a>
+            </div>
+
+            <!-- Links to Work Profiles -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-8 text-center">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-700">My Work Profiles</h3>
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                    Connect with me and explore my professional journey and code repositories.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="www.linkedin.com/in/muhanad-hussein-99aab7362" class="text-blue-700 hover:text-blue-900 font-medium text-lg">LinkedIn Profile</a>
+                    <a href="https://github.com/ormzyy" class="text-gray-800 hover:text-gray-900 font-medium text-lg">GitHub Profile</a>
+                </div>
+            </div>
+
+            <!-- Multiple Ways to Reach You (Grid Layout) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="contact-item-card">
+                    <p><strong>Email:</strong> muhanadhussein2005@gmail.com</p>
+                </div>
+                <div class="contact-item-card">
+                    <p><strong>Phone:</strong> 07799 467018</p>
+                </div>
+                <div class="contact-item-card">
+                    <p><strong>College Email:</strong> 11191188@college.wlc.ac.uk</p>
+                </div>
+                <div class="contact-item-card">
+                    <p><strong>Availability:</strong> Weekdays 9 AM - 5 PM (GMT)</p>
+                </div>
+                <!-- Add more contact options as needed -->
+            </div>
+
+            <!-- Availability Info & Downloadable CV -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Availability Information</h3>
+                    <p class="text-gray-700">I am generally available for discussions and collaborations during these hours. For specific appointments, please use the contact form.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-700">Download My CV</h3>
+                    <p class="text-gray-700 mb-3">A detailed overview of my skills, experience, and education.</p>
+                    <a href="https://docs.google.com/document/d/1vrD4g0N5Sgp0QzSSwNdQHxM8gGcBHQ2klsvPWpcNejM/export?format=pdf" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">
+
+                        Download CV (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section (Consistent with other pages) -->
+        <footer class="contact-info-social-media-links border-t-2 border-gray-200 pt-6 mt-8 text-center text-gray-600">
+            <h3 class="text-lg font-semibold mb-2">Contact Information:</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-lg">
+                <p><strong>Phone:</strong> 07799 467018</p>
+                <p><strong>College Email:</strong> 11191188@college.wlc.ac.uk</p>
+                <p><strong>Personal Email:</strong> muhanadhussein2005@gmail.com</p>
+            </div>
+            <div class="flex justify-center space-x-4 mt-6">
+    
+            </div>
+           
+        </footer>
+    </div>
+</body>
+</html>
